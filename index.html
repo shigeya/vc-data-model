@@ -3309,8 +3309,8 @@ for one of `sha256`, `sha384`, or `sha512`, identifying the SHA-256, SHA-384, or
 SHA-512 hash function, respectively, and SHOULD be expressed in lowercase. Each
 `base64-value` MUST be the base64 encoding, as defined in Section 4 of
 [[RFC4648]], of the digest of the resource computed with that hash function,
-with or without the trailing `=` padding; a `base64-value` whose unused trailing
-bits are not zero does not meet this requirement.
+with or without the trailing `=` padding, and SHOULD have its unused trailing
+bits set to zero.
         </p>
 
         <p>
